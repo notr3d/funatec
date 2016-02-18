@@ -82,11 +82,15 @@ body {
   padding: 20px 0;
 }
 .featured-products__item {
+  padding: 0 20px;
   color: #3b3b3b;
 }
 .featured-products__item:hover {
   color: #626062;
   text-decoration: none;
+}
+.featured-products__item img {
+  width: 100%;
 }
 .page-footer {
   background: #787678;
