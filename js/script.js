@@ -1,0 +1,13 @@
+$(document).ready(function(){
+  $('.main-slider__wrapper').slick({
+		autoplay:true,
+		dots:true,
+		fade:true
+  });
+	$('.featured-products__container').slick({
+		autoplay:true,
+		dots:true,
+		slidesToShow:4,
+		slidesToScroll:4
+  });
+});
