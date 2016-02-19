@@ -21,20 +21,19 @@ body {
 }
 
 .page-header {
+	padding-top: 55px;
+	padding-bottom: 40px;
+	background: radial-gradient(#eee, #ddd);
 	.page-nav {
-		background: linear-gradient(to bottom, #7b797b, #4f4d4f);
+		margin-bottom: 40px;
 		&__link {
-			font-size: 14px;
+			font-size: 12px;
 			color: #fff;
 			text-transform: uppercase;
-			text-shadow: 1px 1px black;
 			font-weight: bold;
-			//padding: 5px;
-			//margin-left: 10px;
 			&:hover {
-				box-shadow: 0 0 0 1px #393839;
-				background: #504d4d;
-				//border-radius: 5px;
+				color: #eee;
+				background: transparent !important;
 			}
 		}
 	}
@@ -42,7 +41,7 @@ body {
 		margin-bottom: 0;
 	}
 	.navbar-nav {
-		//padding-top: 10px;
+		background: rgba(102, 102, 102, 0.5);
 	}
 }
 
@@ -78,26 +77,51 @@ body {
 }
 
 .main-slider {	
-	background: #000;
 	&__wrapper {
-		margin-bottom: 0;
+		
 	}
 	&__item {		
 		text-align: center;
+		margin-bottom: 40px;
+		z-index: 1;
 		img {
 			text-align: center;
 			width: 100%;
+		}
+		position: relative;
+		&::before {
+			content: '';
+			display: block;
+			width: 280px;
+			height: 40px;
+			position: absolute;
+			bottom: 87px;
+			left: 10px;
+			transform: rotate(-3deg);
+			box-shadow: 50px 50px 15px 50px rgba(0, 0, 0, 0.75);
+		}
+		&::after {
+			content: '';
+			display: block;
+			width: 280px;
+			height: 40px;
+			position: absolute;
+			bottom: 87px;
+			right: 20px;
+			transform: rotate(3deg);
+			box-shadow: -50px 50px 15px 50px rgba(0, 0, 0, 0.75);
+			z-index: -1;
 		}
 	}
 	.slick-dots {
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		text-align: right;
+		//text-align: right;
 		button {
 			&::before {
 				content: '';
-				background: #fff;
+				background: #6c6b6b;
 				border-radius: 50%;
 			}
 		}
