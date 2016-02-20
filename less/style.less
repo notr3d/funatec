@@ -2,9 +2,9 @@
 @tablet: ~ "(min-width: 768px)";
 @desktop: ~ "(min-width: 1080)";*/
 
-/*@blue:#29c5e6;*/
+@orange:#ea940a;
 
-/*@import "header.less";*/
+@import "contacts.less";
 
 /*@font-face {
   font-family: Oswald;
@@ -15,16 +15,11 @@ body {
   margin: 0;
 }
 
-.lcw() {
-  max-width:1080px;
-  margin: 0 auto;
-}
-
 .page-header {
 	padding-top: 55px;
-	padding-bottom: 40px;
-	background: radial-gradient(#eee, #ddd);
-	.page-nav {
+	padding-bottom: 55px;
+	background: radial-gradient(100vh, #fff, #505050);	
+	.page-nav {		
 		margin-bottom: 40px;
 		&__link {
 			font-size: 12px;
@@ -32,7 +27,7 @@ body {
 			text-transform: uppercase;
 			font-weight: bold;
 			&:hover {
-				color: #eee;
+				color: @orange;
 				background: transparent !important;
 			}
 		}
@@ -41,34 +36,39 @@ body {
 		margin-bottom: 0;
 	}
 	.navbar-nav {
-		background: rgba(102, 102, 102, 0.5);
+		background: rgba(0, 0, 0, 0.5);
+		border-right: 1px solid #6c686c;
+	}
+	.page-logo {
+		background: #000;
+		width: 200px;
 	}
 }
 
-.client {
-	background: #262426;
-	border-top: 1px solid black;
-	border-bottom: 1px solid black;
-	&__link {
-		padding: 10px 15px;
-		display: inline-block;
-		border-left: 1px solid black;
-		border-right: 1px solid black;
-		color: #fff;
-		text-shadow: 1px 1px black;
-		&:hover {
-			color: #fff;
-			text-decoration: none;
-			background: linear-gradient(to bottom, #000, #262426);
-		}
-	}
-	&__links {
-		float: right;
-		a {
-			margin-left: -5px;
-		}
-	}
-}
+//.client {
+//	background: #262426;
+//	border-top: 1px solid black;
+//	border-bottom: 1px solid black;
+//	&__link {
+//		padding: 10px 15px;
+//		display: inline-block;
+//		border-left: 1px solid black;
+//		border-right: 1px solid black;
+//		color: #fff;
+//		text-shadow: 1px 1px black;
+//		&:hover {
+//			color: #fff;
+//			text-decoration: none;
+//			background: linear-gradient(to bottom, #000, #262426);
+//		}
+//	}
+//	&__links {
+//		float: right;
+//		a {
+//			margin-left: -5px;
+//		}
+//	}
+//}
 
 .slick-slide { 
 	&:focus {			
@@ -78,7 +78,7 @@ body {
 
 .main-slider {	
 	&__wrapper {
-		
+		margin-bottom: 0;	
 	}
 	&__item {		
 		text-align: center;
@@ -98,7 +98,7 @@ body {
 			bottom: 87px;
 			left: 10px;
 			transform: rotate(-3deg);
-			box-shadow: 50px 50px 15px 50px rgba(0, 0, 0, 0.75);
+			box-shadow: 50px 50px 15px 50px rgba(0, 0, 0, 0.5);
 		}
 		&::after {
 			content: '';
@@ -109,30 +109,61 @@ body {
 			bottom: 87px;
 			right: 20px;
 			transform: rotate(3deg);
-			box-shadow: -50px 50px 15px 50px rgba(0, 0, 0, 0.75);
+			box-shadow: -50px 50px 15px 50px rgba(0, 0, 0, 0.5);
 			z-index: -1;
 		}
 	}
 	.slick-dots {
 		position: absolute;
-		bottom: 0;
-		right: 0;
-		//text-align: right;
+		top: 100%;
 		button {
 			&::before {
 				content: '';
-				background: #6c6b6b;
+				background: grey;
 				border-radius: 50%;
+				width: 10px;
+				height: 10px;
 			}
+		}
+	}
+	.slick-active {
+		button {
+			&::before {					
+				background: #000;
+				width: 20px;
+				height: 20px;
+				margin-top: -5px;
+				margin-left: -5px;
+			}
+		}
+	}
+}
+
+.features {
+	&__wrapper {
+		padding: 40px 0 20px;
+		img {
+			float: left;
+			margin-right: 10px;
+		}
+	}
+	&__item {
+		padding: 10px;
+		h3 {
+			color: @orange;
 		}
 	}
 }
 
 .featured-products {
 	padding: 20px 0;
+	background: #f4f2f4;
 	&__item {
-		padding: 0 20px;
 		color: #3b3b3b;
+		margin: 20px;
+		padding: 20px;
+		border: 1px solid #eee;
+		box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
 		&:hover {
 			color: #626062;
 			text-decoration: none;
@@ -141,10 +172,65 @@ body {
 			width: 100%;
 		}
 	}
+	.slick-dots {
+		bottom: 100%;
+		text-align: right;
+		button {
+			&::before {
+			content: '';
+			background: #fff;
+			border-radius: 50%;
+			width: 10px;
+			height: 10px;			
+			box-shadow: 0 0 0 1px #1f1f1f;
+			}
+		}
+	}
+	.slick-active {
+		button {
+			&::before {
+				background: #848181;
+			}
+		}
+	}
 }
 
+.about {
+	h2 {
+		color: @orange;
+	}
+}
+
+.info {
+	h2 {
+		color: @orange;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		li {
+			padding: 0;
+			padding-left: 25px;
+			padding-bottom: 15px;
+		}
+	}
+	&__address {
+		background: url(../img/contacts/address.png) no-repeat 0 0;
+	}
+	&__phone {
+		background: url(../img/contacts/phone.png) no-repeat 0 0;
+	}
+	&__email {
+		background: url(../img/contacts/email.png) no-repeat 0 0;
+	}
+	
+}
+
+
 .page-footer {
-	background: #787678;
+	margin-top: 40px;
+	background: radial-gradient(100vh, #b9b9b9, #505050);
+	font-size: 12px;
 	&__wrapper {
 		padding: 15px;
 	}
