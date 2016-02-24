@@ -26,9 +26,13 @@ body {
 			color: #fff;
 			text-transform: uppercase;
 			font-weight: bold;
-			&:hover {
-				color: @orange;
+			transition: all .3s;
+			&:hover {				
+				background: lighten(@orange, 10%);
+			}
+			&--active {
 				background: transparent !important;
+				box-shadow: 0 5px 0 0 @orange;
 			}
 		}
 	}
@@ -37,13 +41,10 @@ body {
 	}
 	.navbar-nav {
 		background: rgba(0, 0, 0, 0.5);
-		border-right: 1px solid #6c686c;
-		border-radius: 6px;
 	}
 	.page-logo {
 		background: #000;
 		width: 200px;
-		border-radius: 6px;
 	}
 }
 
@@ -198,35 +199,35 @@ body {
 }
 
 .page-footer {
-	background: radial-gradient(100vh, #b9b9b9, #505050);
 	font-size: 12px;
-	border-top: 5px solid gray;
+	&__lower {	
+		padding: 15px 0;
+		margin-top: 20px;
+		border-top: 5px solid gray;	
+		background: radial-gradient(100vh, #b9b9b9, #505050);
+	}
 	h2 {
 		color: @orange;
-	}
-	&__wrapper {
-		padding: 15px;
 	}
 	&__about {
 		
 	}
 	&__contacts {
-	ul {
-		list-style: none;
-		padding: 0;
-		li {
+		ul {
+			list-style: none;
 			padding: 0;
-			padding-left: 25px;
-			padding-bottom: 15px;
-		}
-	}	
-}
+			li {
+				padding: 0;
+				padding-left: 25px;
+				padding-bottom: 15px;
+			}
+		}	
+	}
 	&__links {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		display: inline-block;
-		margin-top: 40px;
 		li {
 			display: inline-block;
 			&:not(:last-child) {
@@ -244,7 +245,6 @@ body {
 	&__copy {
 		float: right;
 		color: #fff;		
-		margin-top: 40px;
 		@media @mobile {
 			float: left;
 		}
