@@ -86,8 +86,8 @@ body {
 		}
 	}
 	.page-logo {
-		background: #000;
 		width: 200px;
+		background: url(../img/page-logo.png) no-repeat center;
 	}
 }
 
@@ -272,13 +272,19 @@ body {
 	&__links {
 		list-style: none;
 		margin: 0;
-		padding: 0;
-		display: inline-block;
-		li {
+		li {			
+		  padding: 5px 0;
 			display: inline-block;
 			&:not(:last-child) {
 				a {					
 					border-right: 1px solid #fff;
+				}
+			}
+			@media @mobile {
+				display: block;
+				a {
+					border: none;
+					font-size: 16px;
 				}
 			}
 		}
@@ -287,12 +293,18 @@ body {
 			padding: 0 10px;
 			color: #fff;
 		}
+		@media @mobile {
+			text-align: center;
+		}
 	}
 	&__copy {
 		float: right;
-		color: #fff;		
+		color: #fff;	
+		padding: 5px 0;
+		display: block;
 		@media @mobile {
-			float: left;
+			float: none;
+			text-align: center;
 		}
 	}
 	&__address {
