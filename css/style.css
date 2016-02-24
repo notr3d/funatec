@@ -1,5 +1,6 @@
 .products {
   padding: 40px 0;
+  min-height: 600px;
 }
 .products__header {
   text-align: center;
@@ -82,6 +83,48 @@
     transform: none;
   }
 }
+.product {
+  margin: 20px 0;
+}
+.product__header {
+  margin: 0;
+  background: #ddd;
+  padding: 10px;
+  color: #ea940a;
+}
+.product__wrapper {
+  border: 1px solid #ddd;
+  padding: 0 15px;
+  background: #fff;
+}
+.product img {
+  width: 100%;
+}
+.product h2 {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+.product ul {
+  list-style: none;
+  padding-left: 0;
+}
+.product ul li {
+  margin-bottom: 5px;
+  padding-left: 20px;
+  position: relative;
+}
+.product ul li::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 5px;
+  border-left: 2px solid #ea940a;
+  border-bottom: 2px solid #ea940a;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  transform: rotate(-45deg);
+}
 .contacts__form {
   margin-bottom: 40px;
   padding: 20px 0;
@@ -140,6 +183,35 @@
 }*/
 body {
   margin: 0;
+  background: #faf8fa;
+}
+.scrollup {
+  position: fixed;
+  bottom: 60px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.33);
+  border: 5px solid rgba(0, 0, 0, 0.33);
+  outline: none;
+  transition: all .3s;
+}
+.scrollup::before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid rgba(0, 0, 0, 0.33);
+  border-top: 5px solid rgba(0, 0, 0, 0.33);
+  top: 50%;
+  left: 50%;
+  margin-top: 6px;
+  margin-left: 4px;
+  transform: rotate(45deg);
+}
+.scrollup:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 .page-header {
   padding-top: 55px;
@@ -245,11 +317,11 @@ body {
   background: #f4f2f4;
 }
 .featured-products__item {
+  background: #fff;
   color: #3b3b3b;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 4px 1px rgba(0, 0, 0, 0.5);
+  border: 1px solid #ddd;
 }
 .featured-products__item:hover {
   color: #626062;
@@ -276,9 +348,12 @@ body {
 .page-footer {
   font-size: 12px;
 }
+.page-footer__higher {
+  background: #f4f2f4;
+  padding-bottom: 10px;
+}
 .page-footer__lower {
   padding: 15px 0;
-  margin-top: 20px;
   border-top: 5px solid gray;
   background: radial-gradient(100vh, #b9b9b9, #505050);
 }
@@ -328,4 +403,13 @@ body {
 }
 .page-footer__email {
   background: url(../img/contacts/email.png) no-repeat 0 0;
+}
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+aside ul a {
+  display: block;
+  padding: 10px 0;
+  border-bottom: 2px dotted #ddd;
 }

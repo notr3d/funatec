@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	
 	$('.products__filter button').click(function(){
 		$(this).addClass('filter-active');		
 		$(this).siblings().removeClass('filter-active');
@@ -10,7 +11,12 @@ $(document).ready(function(){
 			$('.products__item').filter(':not(' + active + ')').slideUp();
 			$('.products__item').filter(active).delay(300).slideDown();
 		}
-	})
+	});
+	
+	$('.scrollup').click(function(){
+		$('body').animate({scrollTop: 0}, 300);
+		return false;
+	});
 	
   $('.main-slider__wrapper').slick({
 		autoplay:true,
@@ -63,6 +69,7 @@ $(document).ready(function(){
 			}
 		]
   });
+	
 });
 
 {

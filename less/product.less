@@ -1,0 +1,42 @@
+.product {
+	&__header {
+		margin: 0;
+		background: #ddd;
+		padding: 10px;
+		color: @orange;
+	}
+	&__wrapper {		
+		border: 1px solid #ddd;
+		padding: 0 15px;
+		background: #fff;
+	}
+	img {
+		width: 100%;
+	}
+	h2 {
+		border-top: 1px solid #ddd;
+		padding-top: 20px;
+	}
+	margin: 20px 0;
+	ul {
+		list-style:none;
+		padding-left: 0;
+		li {
+			margin-bottom: 5px;
+			padding-left: 20px;
+			position: relative;
+			&::before {
+				content: '';
+				display: block;
+				width: 10px;
+				height: 5px;
+				border-left: 2px solid @orange;
+				border-bottom: 2px solid @orange;				
+				position: absolute;
+				top: 6px;
+				left: -0;
+				transform:  rotate(-45deg);
+			}
+		}
+	}
+}
