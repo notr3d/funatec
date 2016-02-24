@@ -3,9 +3,33 @@
 	&__header {
 		text-align: center;
 		margin-bottom: 20px;
+		display: inline-block;
 	}
 	&__filter {
 		margin: 20px 0;
+		display: inline-block;
+		float: right;
+		span {
+			margin-right: 10px;
+		}
+		button {
+			padding: 5px 10px;
+			outline: none;
+			border: 1px solid #ddd;
+			margin: 0 5px;
+			transition: all .3s;
+			&:hover {
+				background: lighten(@orange, 10%);
+			}
+		}
+		.filter-active {
+			background: @orange;
+			color: #fff;
+			transform: scale(1.1);
+		}
+	}
+	&__container {
+		transition: all .3s;
 	}
 	&__item {
 		text-align: center;

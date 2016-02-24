@@ -1,12 +1,14 @@
 $(document).ready(function(){
 	$('.products__filter button').click(function(){
+		$(this).addClass('filter-active');		
+		$(this).siblings().removeClass('filter-active');
 		var active = ($(this).attr('id'));
 		if (active == 'all') {
-			$('.products__item').fadeIn();	
+			$('.products__item').slideDown();	
 		} else {
 			active = '.' + active;
-			$('.products__item').filter(active).fadeIn();
-			$('.products__item').filter(':not(' + active + ')').fadeOut();
+			$('.products__item').filter(':not(' + active + ')').slideUp();
+			$('.products__item').filter(active).delay(300).slideDown();
 		}
 	})
 	
