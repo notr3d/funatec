@@ -43,8 +43,32 @@
 		</section>
 		<div class="map" id="map"></div>
   </header>
-  
-	
+  <section class="contacts">
+  	<div class="contacts__wrapper container">
+  		<h1 class="contacts__header">Contact us</h1>
+  		<form class="contacts__form container col-sm-8">
+				<div class="form-group">
+					<label for="name" class="col-sm-3">Your name*</label>
+					<input type="text" class="col-xs-12 col-sm-9" id="name" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="email" class="col-sm-3">Your email*</label>
+					<input type="email" class="col-xs-12 col-sm-9" id="email" name="name" required>
+				</div>
+				<div class="form-group">
+					<label for="tel" class="col-sm-3">Your phone number</label>
+					<input type="tel" class="col-xs-12 col-sm-9" id="tel" name="name">
+				</div>
+				<div class="form-group">
+					<label for="message" class="col-sm-3">Your message*</label>
+					<textarea name="message" class="col-xs-12 col-sm-9" id="message" cols="30" rows="10"></textarea>
+				</div>
+				<div class="form-group">
+					<button type="submit" class="col-sm-offset-3 col-sm-9 offset">Submit</button>
+				</div>
+			</form>
+  	</div>
+  </section>	
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
 			<section class="page-footer__about col-sm-6">

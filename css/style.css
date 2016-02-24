@@ -1,3 +1,23 @@
+.contacts__form {
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+.contacts__form input {
+  margin-bottom: 20px;
+  padding: 6px;
+  outline: none;
+}
+.contacts__form textarea {
+  resize: vertical;
+  padding: 6px;
+  outline: none;
+  margin-bottom: 20px;
+}
+.contacts__form label {
+  padding: 0;
+  padding-right: 10px;
+  text-align: right;
+}
 .map {
   height: 400px;
   border-top: 5px solid grey;
