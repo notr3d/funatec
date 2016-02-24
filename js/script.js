@@ -1,4 +1,24 @@
 $(document).ready(function(){
+	$('#all').click(function(){
+		$('.products__item').slideDown();
+	});
+	$('#pedals').click(function(){
+		$('.products__item').filter('.pedals').slideDown();
+		$('.products__item').filter(':not(.pedals)').slideUp();
+	});
+	$('#wheel').click(function(){
+		$('.products__item').filter('.wheel').slideDown();
+		$('.products__item').filter(':not(.wheel)').slideUp();
+	});
+	$('#mount').click(function(){
+		$('.products__item').filter('.mount').slideDown();
+		$('.products__item').filter(':not(.mount)').slideUp();
+	});
+	$('#shifter').click(function(){
+		$('.products__item').filter('.shifter').slideDown();
+		$('.products__item').filter(':not(.shifter)').slideUp();
+	});
+	
   $('.main-slider__wrapper').slick({
 		autoplay:true,
 		dots:true,
@@ -8,6 +28,7 @@ $(document).ready(function(){
 		cssEase: 'linear',
 		autoplaySpeed:10000
   });
+	
 	$('.featured-products__container').slick({
 		autoplay:true,
 		dots:true,

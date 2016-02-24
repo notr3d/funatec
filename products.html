@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>title</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/slick.css" rel="stylesheet">
+  <link href="css/slick-theme.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <header class="page-header">
+		<section class="page-nav">
+			<nav class="navbar container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="page-logo navbar-brand" href="index.html"><span>Page Logo</span></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown">
+							<a href="#" class="page-nav__link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="licenses.html" class="page-nav__link page-nav__link--small" class="page-nav__link">Лицензии</a></li>
+								<li><a href="reviews.html" class="page-nav__link page-nav__link--small">Отзывы</a></li>
+							</ul>
+						</li>
+						<li><a href="prices.html" class="page-nav__link">Community</a></li>
+						<li><a href="prices.html" class="page-nav__link">Support / FAQ</a></li>
+						<li><a href="prices.html" class="page-nav__link">Downloads</a></li>
+						<li><a href="prices.html" class="page-nav__link">Media</a></li>
+						<li><a href="contacts.html" class="page-nav__link">Contact us</a></li>
+					</ul>
+				</div>
+			</nav>        
+		</section>
+<!--
+		<section class="client">
+			<div class="client__wrapper container">
+				<a href="#" class="client__link">0 item(s) - $0.00</a>
+				<div class="client__links">					
+					<a href="#" class="client__link">Shopping cart</a>
+					<a href="#" class="client__link">My account</a>
+					<a href="#" class="client__link">US</a>
+				</div>				
+			</div>
+		</section>
+-->
+  </header>
+  <section class="products">
+  	<div class="products__wrapper container">
+  		<h1 class="products__header">Products</h1>
+  		<div class="products__filter">
+  			<span>Filter by</span>
+  			<button id="all">All</button>
+  			<button id="pedals">Pedals</button>
+  			<button id="wheel">Racing wheels</button>
+  			<button id="mount">Mount</button>
+  			<button id="shifter">Shifters</button>
+  		</div>
+  		<div class="products__container">
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/1.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 mount">
+  			  <div class="products__inner">
+						<img src="img/products/2.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 pedals">
+  			  <div class="products__inner">
+						<img src="img/products/3.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 pedals">
+  			  <div class="products__inner">
+						<img src="img/products/4.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 mount">
+  			  <div class="products__inner">
+						<img src="img/products/5.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/6.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 pedals">
+  			  <div class="products__inner">
+						<img src="img/products/7.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/8.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/9.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 shifter">
+  			  <div class="products__inner">
+						<img src="img/products/10.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/11.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/12.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 shifter">
+  			  <div class="products__inner">
+						<img src="img/products/13.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 shifter">
+  			  <div class="products__inner">
+						<img src="img/products/14.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/15.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 mount">
+  			  <div class="products__inner">
+						<img src="img/products/16.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 pedals">
+  			  <div class="products__inner">
+						<img src="img/products/17.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 pedals">
+  			  <div class="products__inner">
+						<img src="img/products/18.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>  			
+  			<a href="#" class="products__item col-xs-12 col-sm-6 col-md-4 col-lg-3 wheel">
+  			  <div class="products__inner">
+						<img src="img/products/19.jpg" alt="">
+						<div class="products__descr">
+							<h2>lorem</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae nemo eum laudantium facere, ipsum incidunt necessitatibus nulla deserunt adipisci repellendus temporibus ullam minus aperiam. Iusto eaque dolore libero pariatur deserunt!</p>
+						</div>
+  				</div>
+  			</a>
+  		</div>
+  	</div>
+  </section>
+	<footer class="page-footer">
+    <div class="page-footer__wrapper container">
+			<section class="page-footer__about col-sm-6">
+				<h2>about</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis molestiae, possimus illum! Reprehenderit minima rem, nulla autem molestiae, maxime id, voluptatem voluptate cupiditate labore impedit voluptatum. Minima recusandae maiores natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, fugiat, nihil mollitia asperiores, officia, est similique natus necessitatibus quae maxime nam incidunt. Ullam ea facere atque, commodi, libero beatae doloremque.</p>
+			</section>
+			<section class="page-footer__contacts col-sm-6">
+				<h2>contact us</h2>
+				<ul>
+					<li class="page-footer__address">Seligenthalerstr. 16 a, D-84034 Landshut, Germany</li>
+					<li class="page-footer__phone">+49 (871) 9221122</li>
+					<li class="page-footer__email"><a href="#">lorem@lorem.com</a></li>
+				</ul>
+			</section>
+  		<ul class="page-footer__links col-sm-10">
+  			<li><a href="">lorem</a></li>
+  			<li><a href="">lorem</a></li>
+  			<li><a href="">lorem</a></li>
+  			<li><a href="">lorem</a></li>
+  			<li><a href="">lorem</a></li>
+  			<li><a href="">lorem</a></li>
+  		</ul> 		
+  		<span class="page-footer__copy col-sm-2">Copyright © 2016 Lorem</span>
+  	</div>
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/slick.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
