@@ -64,6 +64,10 @@ body {
 			&--active {
 				background: transparent !important;
 				box-shadow: 0 5px 0 0 @orange;
+				@media @mobile {					
+					background: @orange !important;
+					box-shadow: none;
+				}
 			}
 		}
 	}
@@ -72,6 +76,14 @@ body {
 	}
 	.navbar-nav {
 		background: rgba(0, 0, 0, 0.5);
+	}
+	.navbar-toggle {
+		border: 1px solid @orange;
+		background: #ddd;
+		border-radius: 0;
+		span {
+			background: @orange;
+		}
 	}
 	.page-logo {
 		background: #000;

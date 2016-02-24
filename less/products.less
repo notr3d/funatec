@@ -42,10 +42,15 @@
 		}
 	}
 	&__inner {
-		padding: 10px;
 		position: relative;
 		overflow: hidden;
 		border: 1px solid #ddd;
+		img {
+			width: 100%;
+			@media @mobile {
+				width: auto;
+			}
+		}
 	}
 	&__descr {
 		text-align: justify;
