@@ -1,6 +1,3 @@
-/*@mobile: ~ "(max-width: 767px)";
-@tablet: ~ "(min-width: 768px)";
-@desktop: ~ "(min-width: 1080)";*/
 .map {
   height: 400px;
   border-top: 5px solid grey;
@@ -37,10 +34,12 @@ body {
 .page-header .navbar-nav {
   background: rgba(0, 0, 0, 0.5);
   border-right: 1px solid #6c686c;
+  border-radius: 6px;
 }
 .page-header .page-logo {
   background: #000;
   width: 200px;
+  border-radius: 6px;
 }
 .slick-slide:focus {
   outline: none;
@@ -51,7 +50,6 @@ body {
 .main-slider__item {
   text-align: center;
   margin-bottom: 40px;
-  z-index: 1;
   position: relative;
 }
 .main-slider__item img {
@@ -145,43 +143,32 @@ body {
 .featured-products .slick-active button::before {
   background: #848181;
 }
-.about h2 {
-  color: #ea940a;
-}
-.info h2 {
-  color: #ea940a;
-}
-.info ul {
-  list-style: none;
-  padding: 0;
-}
-.info ul li {
-  padding: 0;
-  padding-left: 25px;
-  padding-bottom: 15px;
-}
-.info__address {
-  background: url(../img/contacts/address.png) no-repeat 0 0;
-}
-.info__phone {
-  background: url(../img/contacts/phone.png) no-repeat 0 0;
-}
-.info__email {
-  background: url(../img/contacts/email.png) no-repeat 0 0;
-}
 .page-footer {
-  margin-top: 40px;
   background: radial-gradient(100vh, #b9b9b9, #505050);
   font-size: 12px;
+  border-top: 5px solid gray;
+}
+.page-footer h2 {
+  color: #ea940a;
 }
 .page-footer__wrapper {
   padding: 15px;
+}
+.page-footer__contacts ul {
+  list-style: none;
+  padding: 0;
+}
+.page-footer__contacts ul li {
+  padding: 0;
+  padding-left: 25px;
+  padding-bottom: 15px;
 }
 .page-footer__links {
   list-style: none;
   margin: 0;
   padding: 0;
   display: inline-block;
+  margin-top: 40px;
 }
 .page-footer__links li {
   display: inline-block;
@@ -197,4 +184,19 @@ body {
 .page-footer__copy {
   float: right;
   color: #fff;
+  margin-top: 40px;
+}
+@media (max-width: 767px) {
+  .page-footer__copy {
+    float: left;
+  }
+}
+.page-footer__address {
+  background: url(../img/contacts/address.png) no-repeat 0 0;
+}
+.page-footer__phone {
+  background: url(../img/contacts/phone.png) no-repeat 0 0;
+}
+.page-footer__email {
+  background: url(../img/contacts/email.png) no-repeat 0 0;
 }

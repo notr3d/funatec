@@ -1,6 +1,6 @@
-/*@mobile: ~ "(max-width: 767px)";
+@mobile: ~ "(max-width: 767px)";
 @tablet: ~ "(min-width: 768px)";
-@desktop: ~ "(min-width: 1080)";*/
+@desktop: ~ "(min-width: 1080)";
 
 @orange:#ea940a;
 
@@ -38,10 +38,12 @@ body {
 	.navbar-nav {
 		background: rgba(0, 0, 0, 0.5);
 		border-right: 1px solid #6c686c;
+		border-radius: 6px;
 	}
 	.page-logo {
 		background: #000;
 		width: 200px;
+		border-radius: 6px;
 	}
 }
 
@@ -83,10 +85,9 @@ body {
 	&__item {		
 		text-align: center;
 		margin-bottom: 40px;
-		z-index: 1;
 		img {
 			text-align: center;
-			width: 100%;
+			width: 100%;			
 		}
 		position: relative;
 		&::before {
@@ -195,16 +196,20 @@ body {
 	}
 }
 
-.about {
+.page-footer {
+	background: radial-gradient(100vh, #b9b9b9, #505050);
+	font-size: 12px;
+	border-top: 5px solid gray;
 	h2 {
 		color: @orange;
 	}
-}
-
-.info {
-	h2 {
-		color: @orange;
+	&__wrapper {
+		padding: 15px;
 	}
+	&__about {
+		
+	}
+	&__contacts {
 	ul {
 		list-style: none;
 		padding: 0;
@@ -213,32 +218,14 @@ body {
 			padding-left: 25px;
 			padding-bottom: 15px;
 		}
-	}
-	&__address {
-		background: url(../img/contacts/address.png) no-repeat 0 0;
-	}
-	&__phone {
-		background: url(../img/contacts/phone.png) no-repeat 0 0;
-	}
-	&__email {
-		background: url(../img/contacts/email.png) no-repeat 0 0;
-	}
-	
+	}	
 }
-
-
-.page-footer {
-	margin-top: 40px;
-	background: radial-gradient(100vh, #b9b9b9, #505050);
-	font-size: 12px;
-	&__wrapper {
-		padding: 15px;
-	}
 	&__links {
 		list-style: none;
 		margin: 0;
 		padding: 0;
 		display: inline-block;
+		margin-top: 40px;
 		li {
 			display: inline-block;
 			&:not(:last-child) {
@@ -255,6 +242,19 @@ body {
 	}
 	&__copy {
 		float: right;
-		color: #fff;
+		color: #fff;		
+		margin-top: 40px;
+		@media @mobile {
+			float: left;
+		}
+	}
+	&__address {
+		background: url(../img/contacts/address.png) no-repeat 0 0;
+	}
+	&__phone {
+		background: url(../img/contacts/phone.png) no-repeat 0 0;
+	}
+	&__email {
+		background: url(../img/contacts/email.png) no-repeat 0 0;
 	}
 }
