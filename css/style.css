@@ -405,9 +405,10 @@ body {
 @media (max-width: 767px) {
   .page-footer__links li {
     display: block;
+    border: none;
   }
   .page-footer__links li a {
-    border: none;
+    border: none !important;
     font-size: 16px;
   }
 }
