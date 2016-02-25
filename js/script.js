@@ -21,7 +21,7 @@ $(document).ready(function(){
   $('.main-slider__wrapper').slick({
 		autoplay:true,
 		dots:true,
-		arrows:false,
+		arrows:true,
 		fade:true,
 		speed: 500,
 		cssEase: 'linear',
