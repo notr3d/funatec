@@ -80,6 +80,7 @@ body {
 	}
 	.navbar {
 		margin-bottom: 0;
+		padding: 0 30px;
 	}
 	.navbar-nav {
 		background: rgba(0, 0, 0, 0.5);
@@ -133,6 +134,7 @@ body {
 	&__wrapper {
 		margin-bottom: 0;	
 		margin-top: 40px;
+		padding: 0 30px;
 	}
 	&__item {		
 		text-align: center;
@@ -191,7 +193,7 @@ body {
 		}
 	}
 	.slick-prev {
-		left: 30px;	
+		left: 50px;	
 		top: 45%;
 		z-index: 1;
 		&::before {
@@ -205,7 +207,7 @@ body {
 		}
 	}
 	.slick-next {
-		right:25px;
+		right: 45px;
 		top: 45%;
 		z-index: 1;
 		&::before {
@@ -222,14 +224,14 @@ body {
 
 .features {
 	&__wrapper {
-		padding: 40px 0 20px;
+		padding: 40px 15px 20px;
 		img {
 			float: left;
 			margin-right: 10px;
 		}
 	}
 	&__item {
-		padding: 10px;
+		padding: 0 15px;
 		h3 {
 			color: @orange;
 		}
@@ -239,10 +241,13 @@ body {
 .featured-products {
 	padding: 20px 0;
 	background: #f4f2f4;
+	&__header {
+		margin: 0 15px 20px;
+	}
 	&__item {
 		background: #fff;
 		color: #3b3b3b;
-		margin: 20px;
+		margin: 0 15px;
 		padding: 20px;
 		border: 1px solid #ddd;
 		&:hover {
@@ -306,6 +311,7 @@ body {
 	&__links {
 		list-style: none;
 		margin: 0;
+		padding: 0;
 		li {			
 		  padding: 5px 0;
 			display: inline-block;
@@ -325,7 +331,7 @@ body {
 		}
 		a {
 			display: inline-block;
-			padding: 0 10px;
+			padding: 0 15px;
 			color: #fff;
 		}
 		@media @mobile {
@@ -337,6 +343,7 @@ body {
 		color: #fff;	
 		padding: 5px 0;
 		display: block;
+		text-align: right;
 		@media @mobile {
 			float: none;
 			text-align: center;
