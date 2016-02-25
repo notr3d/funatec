@@ -13,6 +13,13 @@
   src: url("font/Oswald/Oswald-Light.ttf");
 }*/
 
+* {
+	&::selection {
+		background: @orange;
+		color: #fff;
+	}
+}
+
 body {
   margin: 0;
 	background: #faf8fa;
@@ -247,7 +254,6 @@ body {
 		}
 	}
 	.slick-dots {
-		top: -10px;
 		text-align: right;
 		button {
 			&::before {
