@@ -73,8 +73,9 @@ $(document).ready(function(){
 	$('.product__slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
+		arrows: true,
 		fade: true,
+		adaptiveHeight: true,
 		asNavFor: '.product__slider-nav'
 	});
 	
@@ -82,8 +83,9 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.product__slider',
-		dots: false,
+		dots: true,
 		centerMode: true,
+		centerPadding: '60px',
 		focusOnSelect: true
 	});
 
