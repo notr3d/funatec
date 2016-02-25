@@ -70,6 +70,23 @@ $(document).ready(function(){
 		]
   });
 	
+	$('.product__slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: false,
+		fade: true,
+		asNavFor: '.product__slider-nav'
+	});
+	
+	$('.product__slider-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		asNavFor: '.product__slider',
+		dots: false,
+		centerMode: true,
+		focusOnSelect: true
+	});
+
 });
 
 {
