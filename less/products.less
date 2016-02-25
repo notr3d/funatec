@@ -2,9 +2,12 @@
 	padding: 40px 0;	
 	min-height: 600px;
 	&__header {
-		text-align: center;
 		margin-bottom: 20px;
 		display: inline-block;
+		@media @mobile {
+			display: block;
+			text-align: center;
+		}
 	}
 	&__filter {
 		margin: 20px 0;
@@ -22,11 +25,19 @@
 			&:hover {
 				background: lighten(@orange, 10%);
 			}
+			@media @mobile {
+				margin: 0;
+			}
 		}
 		.filter-active {
 			background: @orange;
 			color: #fff;
 			transform: scale(1.1);
+		}
+		@media @mobile {
+			float:none;
+			display: block;
+			text-align: center;
 		}
 	}
 	&__container {
