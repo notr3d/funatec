@@ -24,7 +24,6 @@
   padding: 5px 10px;
   outline: none;
   border: 1px solid #ddd;
-  margin: 0 5px;
   transition: all .3s;
 }
 .products__filter button:hover {
@@ -38,7 +37,6 @@
 .products__filter .filter-active {
   background: #ea940a;
   color: #fff;
-  transform: scale(1.1);
 }
 @media (max-width: 767px) {
   .products__filter {
@@ -240,7 +238,6 @@
   outline: none;
   background: #f4f2f4;
   border: 1px solid #a3a2a2;
-  border-radius: 5px;
   transition: all .3s;
 }
 .contacts__form input[type="submit"] {
@@ -266,7 +263,6 @@
   background: #f4f2f4;
   border: 1px solid #a3a2a2;
   margin-bottom: 20px;
-  border-radius: 5px;
   transition: all .3s;
 }
 .contacts__form textarea:hover {
@@ -275,6 +271,7 @@
 .contacts__form label {
   padding: 0;
   padding-right: 10px;
+  text-align: right;
 }
 .map {
   height: 400px;
