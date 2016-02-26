@@ -13,6 +13,13 @@ $(document).ready(function(){
 		}
 	});
 	
+//	var activeProduct = $(location).attr('href');
+//	activeProduct = activeProduct.split('#');
+//	activeProduct = activeProduct[1];
+//	activeProduct = '.' + activeProduct;
+//	$('.products__item').filter(':not(' + activeProduct + ')').slideUp();
+//	$('.products__item').filter(activeProduct).delay(300).slideDown();
+	
 	$('.scrollup').click(function(){
 		$('body').animate({scrollTop: 0}, 300);
 		return false;
