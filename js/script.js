@@ -22,6 +22,9 @@ $(document).ready(function(){
 		activeProduct = '.' + activeProduct;
 		$('.products__item').filter(':not(' + activeProduct + ')').slideUp();
 		$('.products__item').filter(activeProduct).delay(300).slideDown();
+		activeProduct = '.products__filter button' + activeProduct;
+		$('.products__filter button').removeClass('filter-active');
+		$(activeProduct).addClass('filter-active');
 	}
 	
 	
