@@ -575,12 +575,36 @@ body {
 .page-footer__email {
   background: url(../img/contacts/email.png) no-repeat 0 0;
 }
-aside ul {
+.side-menu ul {
   list-style: none;
   padding: 0;
 }
-aside ul a {
+.side-menu ul a {
   display: block;
   padding: 10px 0;
-  border-bottom: 2px dotted #ddd;
+  border-bottom: 1px dotted #ddd;
+}
+.side-menu ul li ul li {
+  padding-left: 30px;
+}
+.side-menu ul li ul li a {
+  padding: 5px 0;
+}
+.about {
+  margin: 20px 0;
+}
+.about__wrapper {
+  border: 1px solid #ddd;
+  border-bottom: 5px solid #ddd;
+  padding: 0;
+}
+.about__header {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 5px 15px;
+  background: #ddd;
+  color: #ea940a;
+}
+.about p {
+  padding: 0 15px;
 }

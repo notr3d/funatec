@@ -335,14 +335,43 @@ body {
 	}
 }
 
-aside {
+.side-menu {
 	ul {
 		list-style: none;
 		padding: 0;
 		a {
 			display: block;
 			padding: 10px 0;
-			border-bottom: 2px dotted #ddd;
+			border-bottom: 1px dotted #ddd;
 		}
+		li {
+			ul {
+				li {
+					padding-left: 30px;
+					a {
+						padding: 5px 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.about {
+	margin: 20px 0;
+	&__wrapper {
+		border: 1px solid #ddd;
+		border-bottom: 5px solid #ddd;
+		padding: 0;
+	}
+	&__header {
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 5px 15px;
+		background: #ddd;
+		color: @orange;
+	}
+	p {
+		padding: 0 15px;
 	}
 }
