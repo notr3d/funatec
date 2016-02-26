@@ -20,7 +20,7 @@ $(document).ready(function(){
 		$('.products__item').slideDown();
 	} else {
 		activeProduct = '.' + activeProduct;
-		$('.products__item').filter(':not(' + activeProduct + ')').slideUp();
+		$('.products__item').filter(':not(' + activeProduct + ')').hide();
 		$('.products__item').filter(activeProduct).delay(300).slideDown();
 		activeProduct = '.products__filter button' + activeProduct;
 		$('.products__filter button').removeClass('filter-active');
