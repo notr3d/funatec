@@ -13,12 +13,17 @@ $(document).ready(function(){
 		}
 	});
 	
-//	var activeProduct = $(location).attr('href');
-//	activeProduct = activeProduct.split('#');
-//	activeProduct = activeProduct[1];
-//	activeProduct = '.' + activeProduct;
-//	$('.products__item').filter(':not(' + activeProduct + ')').slideUp();
-//	$('.products__item').filter(activeProduct).delay(300).slideDown();
+	var activeProduct = $(location).attr('href');
+	activeProduct = activeProduct.split('#');
+	activeProduct = activeProduct[1];
+	if (activeProduct == undefined) {
+		$('.products__item').slideDown();
+	} else {
+		activeProduct = '.' + activeProduct;
+		$('.products__item').filter(':not(' + activeProduct + ')').slideUp();
+		$('.products__item').filter(activeProduct).delay(300).slideDown();
+	}
+	
 	
 	$('.scrollup').click(function(){
 		$('body').animate({scrollTop: 0}, 300);
