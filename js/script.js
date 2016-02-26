@@ -80,7 +80,7 @@ $(document).ready(function(){
 	});
 	
 	$('.product__slider-nav').slick({
-		//slidesToShow: 3,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.product__slider',
 		dots: true,
