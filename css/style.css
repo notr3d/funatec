@@ -391,11 +391,13 @@ body {
   border: 1px solid #ea940a;
   background: #ddd;
   border-radius: 0;
+  margin-right: 15px;
 }
 .page-header .navbar-toggle span {
   background: #ea940a;
 }
 .page-header .page-logo {
+  margin-left: 15px;
   width: 200px;
   background: url(../img/page-logo.png) no-repeat center;
 }
