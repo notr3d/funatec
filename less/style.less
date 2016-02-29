@@ -13,11 +13,12 @@
   src: url("font/Oswald/Oswald-Light.ttf");
 }*/
 
-* {
+* {	
 	&::selection {
 		background: @orange;
 		color: #fff;
 	}
+	
 }
 
 body {
@@ -61,7 +62,7 @@ body {
 
 .page-header {
 	padding-top: 55px;
-	padding-bottom: 55px;
+	padding-bottom: 35px;
 	background: radial-gradient(100vh, #fff, #505050);	
 	.page-nav {	
 		.dropdown-menu {
@@ -174,9 +175,10 @@ body {
 			z-index: -1;
 		}
 	}
-	.slick-dots {
-		position: absolute;
-		top: 100%;
+	.slick-dots {		
+		width: auto;
+		margin: 0 auto;
+		position: static;
 		button {
 			&::before {
 				content: '';
@@ -189,7 +191,8 @@ body {
 	}
 	.slick-active {
 		button {
-			&::before {					
+			&::before {				
+				transition: all .3s;
 				background: #000;
 				width: 20px;
 				height: 20px;

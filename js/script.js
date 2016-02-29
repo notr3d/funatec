@@ -45,6 +45,7 @@ $(document).ready(function(){
 	
 	$('.featured-products__container').slick({
 		autoplay:true,
+		arrows:false,
 		dots:true,
 		slidesToShow:4,
 		slidesToScroll:4,
