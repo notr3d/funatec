@@ -328,13 +328,17 @@ body {
   border-radius: 0;
   background: #ea940a;
   padding: 0;
+  left: 0 !important;
 }
 .page-header .page-nav .dropdown-menu a {
   color: #fff;
-  padding: 5px 10px;
+  padding: 5px 0 5px 15px;
 }
 .page-header .page-nav .dropdown-menu a:hover {
   background: #f6aa31;
+}
+.page-header .page-nav .dropdown-menu .divider {
+  margin: 0 !important;
 }
 .page-header .page-nav__link {
   font-size: 12px;
