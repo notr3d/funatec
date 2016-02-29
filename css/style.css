@@ -251,11 +251,22 @@
 .contacts__form input[type="submit"]:focus {
   background: #f6aa31;
 }
+@media (max-width: 767px) {
+  .contacts__form input[type="submit"] {
+    font-size: 20px;
+  }
+}
 .contacts__form input:hover {
   background: #fff;
 }
 .contacts__form input:focus {
   background: #fff;
+}
+@media (max-width: 767px) {
+  .contacts__form input {
+    font-size: 20px;
+    padding: 15px;
+  }
 }
 .contacts__form textarea {
   resize: vertical;
@@ -268,6 +279,12 @@
 }
 .contacts__form textarea:hover {
   background: #fff;
+}
+@media (max-width: 767px) {
+  .contacts__form textarea {
+    font-size: 20px;
+    padding: 15px;
+  }
 }
 .contacts__form label {
   padding: 0;
@@ -324,7 +341,7 @@ body {
 }
 @media (max-width: 767px) {
   .scrollup {
-    bottom: 45px;
+    bottom: 50px;
     left: 50%;
     margin-left: -22px;
   }
@@ -543,6 +560,7 @@ body {
   width: 10px;
   height: 10px;
   box-shadow: 0 0 0 1px #1f1f1f;
+  transition: all .3s;
 }
 .featured-products .slick-active button::before {
   background: #848181;
@@ -591,7 +609,6 @@ body {
   }
   .page-footer__links li a {
     border: none !important;
-    font-size: 16px;
   }
 }
 .page-footer__links a {
@@ -626,6 +643,11 @@ body {
 }
 .page-footer__email {
   background: url(../img/contacts/email.png) no-repeat 0 0;
+}
+@media (max-width: 767px) {
+  .page-footer {
+    font-size: 16px;
+  }
 }
 .side-menu ul {
   list-style: none;
