@@ -52,6 +52,7 @@
 .products__item {
   text-align: center;
   margin-bottom: 20px;
+  text-decoration: none !important;
 }
 .products__item:hover .products__descr {
   transform: translateY(0);
@@ -337,9 +338,6 @@ body {
 .page-header .page-nav .dropdown-menu a:hover {
   background: #f6aa31;
 }
-.page-header .page-nav .dropdown-menu .divider {
-  margin: 0 !important;
-}
 .page-header .page-nav__link {
   font-size: 12px;
   color: #fff;
@@ -361,6 +359,11 @@ body {
   .page-header .page-nav__link--active {
     background: #ea940a !important;
     box-shadow: none;
+  }
+}
+@media (max-width: 767px) {
+  .page-header .page-nav__link {
+    background: #ea940a;
   }
 }
 .page-header .navbar {
@@ -586,6 +589,7 @@ body {
 }
 @media (max-width: 767px) {
   .page-footer__copy {
+    margin-top: 40px;
     float: none;
     text-align: center;
   }

@@ -72,8 +72,7 @@ body {
 				}
 			}
 			.divider {
-				margin: 0 !important;
-			}
+			}			
 		}
 		&__link {
 			font-size: 12px;
@@ -95,7 +94,10 @@ body {
 					box-shadow: none;
 				}
 			}
-		}
+			@media @mobile {
+				background: @orange;
+			}
+		}		
 	}
 	.navbar {
 		margin-bottom: 0;
@@ -342,6 +344,7 @@ body {
 		display: block;
 		text-align: right;
 		@media @mobile {
+			margin-top: 40px;
 			float: none;
 			text-align: center;
 		}
