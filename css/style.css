@@ -370,6 +370,11 @@ body {
 .page-header .navbar-nav {
   background: rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 767px) {
+  .page-header .navbar-nav {
+    margin-top: 40px;
+  }
+}
 .page-header .navbar-toggle {
   border: 1px solid #ea940a;
   background: #ddd;
